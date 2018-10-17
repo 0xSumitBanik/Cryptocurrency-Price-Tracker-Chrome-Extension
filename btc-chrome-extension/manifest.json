@@ -1,0 +1,18 @@
+{
+    "name": "Cryptocurrency Price Tracker",
+    "version": "1.9",
+    "description": "Get the real time cryptocurrency prices",
+    "manifest_version": 2,
+    "icons": {
+        "16": "files/img/icon.png",
+        "48": "files/img/icon.png",
+        "128": "files/img/icon.png"
+    },
+    "browser_action": {
+        "default_icon": "files/img/icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["files/js/popup.js"]
+      }
+}

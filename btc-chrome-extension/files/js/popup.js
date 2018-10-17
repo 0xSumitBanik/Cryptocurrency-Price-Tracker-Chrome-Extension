@@ -1,3 +1,6 @@
+function $(id){
+    return document.getElementById(id);
+}
 var xhttpBTC = new XMLHttpRequest(); 
 xhttpBTC.open('GET','https://api.coinmarketcap.com/v1/ticker/',true);
 xhttpBTC.onreadystatechange = function(){
@@ -57,122 +60,122 @@ xhttpBTC.onreadystatechange = function(){
         var xmrChange = info[9].percent_change_1h;
         /*Displaying the corresponding USD values */
         //Bitcoin
-        document.getElementById('btcRank').innerHTML=btcRank;
-        document.getElementById('btcName').innerHTML=btcName;
-        document.getElementById('btcPrice').innerHTML=btcPrice;
+        $('btcRank').innerHTML=btcRank;
+        $('btcName').innerHTML=btcName;
+        $('btcPrice').innerHTML=btcPrice;
         if(btcChange<0){
-            document.getElementById('btcChange').style.color="red";
-            document.getElementById('btcChange').innerHTML=btcChange+" &#x25BC;";
+            $('btcChange').style.color="red";
+            $('btcChange').innerHTML=btcChange+" &#x25BC;";
         }else{
-            document.getElementById('btcChange').style.color="#4CAF50";
-            document.getElementById('btcChange').innerHTML=btcChange+" &#x25B2;";
+            $('btcChange').style.color="#4CAF50";
+            $('btcChange').innerHTML=btcChange+" &#x25B2;";
         }
         //Ethereum
-        document.getElementById('ethRank').innerHTML=ethRank;
-        document.getElementById('ethName').innerHTML=ethName;
-        document.getElementById('ethPrice').innerHTML=ethPrice;
+        $('ethRank').innerHTML=ethRank;
+        $('ethName').innerHTML=ethName;
+        $('ethPrice').innerHTML=ethPrice;
         if(ethChange<0){
-            document.getElementById('ethChange').style.color="red";
-            document.getElementById('ethChange').innerHTML=ethChange+" &#x25BC;";
+            $('ethChange').style.color="red";
+            $('ethChange').innerHTML=ethChange+" &#x25BC;";
         }else{
-            document.getElementById('ethChange').style.color="#4CAF50";
-            document.getElementById('ethChange').innerHTML=ethChange+" &#x25B2;";
+            $('ethChange').style.color="#4CAF50";
+            $('ethChange').innerHTML=ethChange+" &#x25B2;";
         }
         //XRP
-        document.getElementById('xrpRank').innerHTML=xrpRank;
-        document.getElementById('xrpName').innerHTML=xrpName;
-        document.getElementById('xrpPrice').innerHTML=xrpPrice;
+        $('xrpRank').innerHTML=xrpRank;
+        $('xrpName').innerHTML=xrpName;
+        $('xrpPrice').innerHTML=xrpPrice;
         if(xrpChange<0){
-            document.getElementById('xrpChange').style.color="red";
-            document.getElementById('xrpChange').innerHTML=xrpChange+" &#x25BC;";
+            $('xrpChange').style.color="red";
+            $('xrpChange').innerHTML=xrpChange+" &#x25BC;";
         }
         else{
-            document.getElementById('xrpChange').style.color="#4CAF50";
-            document.getElementById('xrpChange').innerHTML=xrpChange+" &#x25B2;";
+            $('xrpChange').style.color="#4CAF50";
+            $('xrpChange').innerHTML=xrpChange+" &#x25B2;";
         }
         //Bitcoin Cash
-        document.getElementById('bchRank').innerHTML=bchRank;
-        document.getElementById('bchName').innerHTML=bchName;
-        document.getElementById('bchPrice').innerHTML=bchPrice;
+        $('bchRank').innerHTML=bchRank;
+        $('bchName').innerHTML=bchName;
+        $('bchPrice').innerHTML=bchPrice;
         if(bchChange<0){
-            document.getElementById('bchChange').style.color="red";
-            document.getElementById('bchChange').innerHTML=bchChange+" &#x25BC;";
+            $('bchChange').style.color="red";
+            $('bchChange').innerHTML=bchChange+" &#x25BC;";
         }
         else{
-            document.getElementById('bchChange').style.color="#4CAF50";
-            document.getElementById('bchChange').innerHTML=bchChange+" &#x25B2;";
+            $('bchChange').style.color="#4CAF50";
+            $('bchChange').innerHTML=bchChange+" &#x25B2;";
         }
         //EOS
-        document.getElementById('eosRank').innerHTML=eosRank;
-        document.getElementById('eosName').innerHTML=eosName;
-        document.getElementById('eosPrice').innerHTML=eosPrice;
+        $('eosRank').innerHTML=eosRank;
+        $('eosName').innerHTML=eosName;
+        $('eosPrice').innerHTML=eosPrice;
         if(eosChange<0){
-            document.getElementById('eosChange').style.color="red";
-            document.getElementById('eosChange').innerHTML=eosChange+" &#x25BC;";
+            $('eosChange').style.color="red";
+            $('eosChange').innerHTML=eosChange+" &#x25BC;";
         }
         else{
-            document.getElementById('eosChange').style.color="#4CAF50";
-            document.getElementById('eosChange').innerHTML=eosChange+" &#x25B2;";
+            $('eosChange').style.color="#4CAF50";
+            $('eosChange').innerHTML=eosChange+" &#x25B2;";
         }
         //Stellar
-        document.getElementById('xlmRank').innerHTML=xlmRank;
-        document.getElementById('xlmName').innerHTML=xlmName;
-        document.getElementById('xlmPrice').innerHTML=xlmPrice;
+        $('xlmRank').innerHTML=xlmRank;
+        $('xlmName').innerHTML=xlmName;
+        $('xlmPrice').innerHTML=xlmPrice;
         if(xlmChange<0){
-            document.getElementById('xlmChange').style.color="red";
-            document.getElementById('xlmChange').innerHTML=xlmChange+" &#x25BC;";
+            $('xlmChange').style.color="red";
+            $('xlmChange').innerHTML=xlmChange+" &#x25BC;";
         }
         else{
-            document.getElementById('xlmChange').style.color="#4CAF50";
-            document.getElementById('xlmChange').innerHTML=xlmChange+" &#x25B2;";
+            $('xlmChange').style.color="#4CAF50";
+            $('xlmChange').innerHTML=xlmChange+" &#x25B2;";
         }
         //Litecoin
-        document.getElementById('ltcRank').innerHTML=ltcRank;
-        document.getElementById('ltcName').innerHTML=ltcName;
-        document.getElementById('ltcPrice').innerHTML=ltcPrice;
+        $('ltcRank').innerHTML=ltcRank;
+        $('ltcName').innerHTML=ltcName;
+        $('ltcPrice').innerHTML=ltcPrice;
         if(ltcChange<0){
-            document.getElementById('ltcChange').style.color="red";
-            document.getElementById('ltcChange').innerHTML=ltcChange+" &#x25BC;";
+            $('ltcChange').style.color="red";
+            $('ltcChange').innerHTML=ltcChange+" &#x25BC;";
         }
         else{
-            document.getElementById('ltcChange').style.color="#4CAF50";
-            document.getElementById('ltcChange').innerHTML=ltcChange+" &#x25B2;";
+            $('ltcChange').style.color="#4CAF50";
+            $('ltcChange').innerHTML=ltcChange+" &#x25B2;";
         }
         //Tether
-        document.getElementById('usdtRank').innerHTML=usdtRank;
-        document.getElementById('usdtName').innerHTML=usdtName;
-        document.getElementById('usdtPrice').innerHTML=usdtPrice;
+        $('usdtRank').innerHTML=usdtRank;
+        $('usdtName').innerHTML=usdtName;
+        $('usdtPrice').innerHTML=usdtPrice;
         if(usdtChange<0){
-            document.getElementById('usdtChange').style.color="red";
-            document.getElementById('usdtChange').innerHTML=usdtChange+" &#x25BC;";
+            $('usdtChange').style.color="red";
+            $('usdtChange').innerHTML=usdtChange+" &#x25BC;";
         }
         else{
-            document.getElementById('usdtChange').style.color="#4CAF50";
-            document.getElementById('usdtChange').innerHTML=usdtChange+" &#x25B2;";
+            $('usdtChange').style.color="#4CAF50";
+            $('usdtChange').innerHTML=usdtChange+" &#x25B2;";
         }
         //Cardano
-        document.getElementById('adaRank').innerHTML=adaRank;
-        document.getElementById('adaName').innerHTML=adaName;
-        document.getElementById('adaPrice').innerHTML=adaPrice;
+        $('adaRank').innerHTML=adaRank;
+        $('adaName').innerHTML=adaName;
+        $('adaPrice').innerHTML=adaPrice;
         if(adaChange<0){
-            document.getElementById('adaChange').style.color="red";
-            document.getElementById('adaChange').innerHTML=adaChange+" &#x25BC;";
+            $('adaChange').style.color="red";
+            $('adaChange').innerHTML=adaChange+" &#x25BC;";
         }
         else{
-            document.getElementById('adaChange').style.color="#4CAF50";
-            document.getElementById('adaChange').innerHTML=adaChange+" &#x25B2;";
+            $('adaChange').style.color="#4CAF50";
+            $('adaChange').innerHTML=adaChange+" &#x25B2;";
         }
         //Monero
-        document.getElementById('xmrRank').innerHTML=xmrRank;
-        document.getElementById('xmrName').innerHTML=xmrName;
-        document.getElementById('xmrPrice').innerHTML=xmrPrice;
+        $('xmrRank').innerHTML=xmrRank;
+        $('xmrName').innerHTML=xmrName;
+        $('xmrPrice').innerHTML=xmrPrice;
         if(xmrChange<0){
-            document.getElementById('xmrChange').style.color="red";
-            document.getElementById('xmrChange').innerHTML=xmrChange+" &#x25BC;";
+            $('xmrChange').style.color="red";
+            $('xmrChange').innerHTML=xmrChange+" &#x25BC;";
         }
         else{
-            document.getElementById('xmrChange').style.color="#4CAF50";
-            document.getElementById('xmrChange').innerHTML=xmrChange+" &#x25B2;";
+            $('xmrChange').style.color="#4CAF50";
+            $('xmrChange').innerHTML=xmrChange+" &#x25B2;";
         }
     }
 };

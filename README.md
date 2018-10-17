@@ -23,6 +23,7 @@ That's it! Now, the chrome extension will be working fine.
 1. [Javascript](https://devdocs.io/javascript/)
 2. [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 3. [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+4. [Materialize CSS](http://materializecss.com)
 
 ![Image of Extension displaying prices](https://github.com/iSumitBanik/Cryptocurrency-Price-Tracker-Chrome-Extension/blob/master/Extension_App.png)
 

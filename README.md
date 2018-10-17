@@ -15,7 +15,7 @@ This Chrome Extension lets you track the prices of **Top 10 cyrptocurrencies** p
 4. If you've uploaded the correct folder, you'll see that the extension is added.
 ![Image of Added Extension](https://github.com/iSumitBanik/Cryptocurrency-Price-Tracker-Chrome-Extension/blob/master/Extension_Added.png)
 
-That's it! Now, the chrome extension will be working fine. 
+That's it! Now, the chrome extension will be working fine.
 ![Image of Extension displaying prices](https://github.com/iSumitBanik/Cryptocurrency-Price-Tracker-Chrome-Extension/blob/master/Extension_App.png)
 
 ### Built with

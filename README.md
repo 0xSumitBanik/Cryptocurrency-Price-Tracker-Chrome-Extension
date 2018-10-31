@@ -31,6 +31,10 @@ That's it! Now, the chrome extension will be working fine.
 
 CoinmarketCap Public API. Read the documentation [here](https://coinmarketcap.com/api/).
 
+### Donations
+BTC: 17LqqdtKYXN7jQDH4BLQR6rQvDUs5trycj
+ETH: 0xB1045C4DF11cF14D7f7F80b6bB1d6Fe64a03AaAD
+
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/iSumitBanik/Cryptocurrency-Price-Tracker-Chrome-Extension/blob/master/LICENSE) file for details.

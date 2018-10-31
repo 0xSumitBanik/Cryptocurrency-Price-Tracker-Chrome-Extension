@@ -178,5 +178,10 @@ xhttpBTC.onreadystatechange = function(){
             $('xmrChange').innerHTML=xmrChange+" &#x25B2;";
         }
     }
+    //Displaying the last update time
+    var time = new Date();
+    var updateTime = time.toLocaleString('en-US',{hour:'numeric',minute:'numeric',hour12:true});
+    $('lastUpdate').innerHTML="Last updated on: "+updateTime;
 };
+    
 xhttpBTC.send();

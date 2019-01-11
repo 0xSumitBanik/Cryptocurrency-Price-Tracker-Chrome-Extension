@@ -6,102 +6,112 @@
     <title>Crypto Price Tracker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="files/css/custom.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="files/css/icon.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="files/css/materialize.min.css" />
-    <script src="files/js/materialize.min.js" async defer></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="files/css/bootstrap.min.css" />
 </head>
+    <script src="files/js/bootstrap.bundle.min.js" async defer rel=preload as=script></script>
+    <script src="files/js/popup.js" async defer rel=preload as=script></script>
 <body>
-    <div class="navbar-fixed">
-        <nav class="custom-navbar">
-                <div class="nav-wrapper">
-                  <h3 class="heading-style center-align">Cryptocurrency Price Tracker<br><span id="lastUpdate"></span></h3>
-                  
-                </div>
-       </nav>
-    </div>
-    <div class="container">
-        <table class="striped" style="width:100%">
-                <tr class="heading-rows">
-                    <th>Rank </th>
-                    <th colspan="2">&nbsp;Name </th> 
-                    <th>Price (USD)</th>
-                    <th>&nbsp;Change% (1h) </th>
+        <div class="header-menu">
+                <header>
+                    <!-- Title -->
+                    <h2 class="mdl-layout-title">
+                       Cryptocurrency Price Tracker 
+                    </h2>
+                </header>
+        </div>    
+        
+    <div class="table-responsive">
+        <table class=" table-striped cursor-style" style="width:100%">
+        <thead>
+                <tr class="heading-rows-style">
+                    <h5><th class="heading-rows center-align">Rank </th></h5>
+                    <h5><th class="heading-rows center-align" colspan="2" class="center-align">&nbsp;Name </th> </h5>
+                    <h5><th id="priceChange" class="heading-rows center-align">Price (USD)</th></h5>
+                    <h5><th class="heading-rows center-align">&nbsp;Change% (1h) </th></h5>
                 </tr>
-                <div class="container">
-                <!-- Bitcoin -->
+        </thead>
+
+                <div>
+                <!-- 1stCoin -->
                 <tr>
-                        <td id="btcRank"  class="center-align"></td>
-                        <td id="btcName" colspan="2"></td>
-                        <td id="btcPrice" class="center-align"></td>
-                        <td id="btcChange" class="center-align"></td>
+                        <td id="Rank1"  class="center-align"></td>
+                        <td id="Name1" colspan="2" class="center-align"> </td>
+                        <td id="Price1" class="center-align"></td>
+                        <td id="Change1" class="center-align"></td>
                 </tr>
-                <!-- Ethereum -->
+                <!-- 2ndCoin -->
                 <tr>
-                    <td id="ethRank" class="center-align"></td>
-                    <td id="ethName" colspan="2"></td>
-                    <td id="ethPrice"class="center-align"></td>
-                    <td id="ethChange" class="center-align"></td>
+                    <td id="Rank2" class="center-align"></td>
+                    <td id="Name2" colspan="2" class="center-align"></td>
+                    <td id="Price2"class="center-align"></td>
+                    <td id="Change2" class="center-align"></td>
                 </tr>
-                <!-- XRP -->
+                <!-- 3rdCoin -->
                 <tr>
-                        <td id="xrpRank" class="center-align"></td>
-                        <td id="xrpName" colspan="2"></td>
-                        <td id="xrpPrice"class="center-align"></td>
-                        <td id="xrpChange" class="center-align"></td>
+                        <td id="Rank3" class="center-align"></td>
+                        <td id="Name3" colspan="2" class="center-align"> </td>
+                        <td id="Price3"class="center-align"></td>
+                        <td id="Change3" class="center-align"></td>
                 </tr>
-                <!-- Bitcoin Cash -->
+                <!-- 4thCoin -->
                 <tr>
-                        <td id="bchRank" class="center-align"></td>
-                        <td id="bchName" colspan="2"></td>
-                        <td id="bchPrice"class="center-align"></td>
-                        <td id="bchChange" class="center-align"></td>
+                        <td id="Rank4" class="center-align"></td>
+                        <td id="Name4" colspan="2" class="center-align"></td>
+                        <td id="Price4" class="center-align"></td>
+                        <td id="Change4" class="center-align"></td>
                 </tr>
-                <!-- EOS -->
+                <!-- 5thCoin  -->
                 <tr>
-                        <td id="eosRank" class="center-align"></td>
-                        <td id="eosName" colspan="2"></td>
-                        <td id="eosPrice"class="center-align"></td>
-                        <td id="eosChange" class="center-align"></td>
+                        <td id="Rank5" class="center-align"></td>
+                        <td id="Name5" colspan="2" class="center-align"></td>
+                        <td id="Price5"class="center-align"></td>
+                        <td id="Change5" class="center-align"></td>
                 </tr>
-                <!-- Stellar -->
+                <!-- 6thCoin -->
                 <tr>
-                        <td id="xlmRank" class="center-align"></td>
-                        <td id="xlmName" colspan="2"></td>
-                        <td id="xlmPrice"class="center-align"></td>
-                        <td id="xlmChange" class="center-align"></td>
+                        <td id="Rank6" class="center-align"></td>
+                        <td id="Name6" colspan="2" class="center-align"></td>
+                        <td id="Price6"class="center-align"></td>
+                        <td id="Change6" class="center-align"></td>
                 </tr>
-                <!-- Litecoin -->
+                <!-- 7thCoin -->
                 <tr>
-                        <td id="ltcRank" class="center-align"></td>
-                        <td id="ltcName" colspan="2"></td>
-                        <td id="ltcPrice"class="center-align"></td>
-                        <td id="ltcChange" class="center-align"></td>
+                        <td id="Rank7" class="center-align"></td>
+                        <td id="Name7" colspan="2" class="center-align"></td>
+                        <td id="Price7"class="center-align"></td>
+                        <td id="Change7" class="center-align"></td>
                 </tr>
-                <!-- Tether -->
+                <!-- 8thCoin -->
                 <tr>
-                        <td id="usdtRank" class="center-align"></td>
-                        <td id="usdtName" colspan="2"></td>
-                        <td id="usdtPrice"class="center-align"></td>
-                        <td id="usdtChange" class="center-align"></td>
+                        <td id="Rank8" class="center-align"></td>
+                        <td id="Name8" colspan="2" class="center-align"></td>
+                        <td id="Price8"class="center-align"></td>
+                        <td id="Change8" class="center-align"></td>
                 </tr>
-                <!-- Cardano -->
+                <!-- 9thCoin -->
                 <tr>
-                        <td id="adaRank" class="center-align"></td>
-                        <td id="adaName" colspan="2"></td>
-                        <td id="adaPrice"class="center-align"></td>
-                        <td id="adaChange" class="center-align"></td>
+                        <td id="Rank9" class="center-align"></td>
+                        <td id="Name9" colspan="2" class="center-align"></td>
+                        <td id="Price9"class="center-align"></td>
+                        <td id="Change9" class="center-align"></td>
                 </tr>
-                <!-- Monero -->
+                <!-- 10thCoin -->
                 <tr>
-                        <td id="xmrRank" class="center-align"></td>
-                        <td id="xmrName" colspan="2"></td>
-                        <td id="xmrPrice"class="center-align"></td>
-                        <td id="xmrChange" class="center-align"></td>
+                        <td id="Rank10" class="center-align"></td>
+                        <td id="Name10" colspan="2" class="center-align"></td>
+                        <td id="Price10"class="center-align"></td>
+                        <td id="Change10" class="center-align"></td>
                 </tr>
             </div>
         </table>
-        
     </div>
-<script src="files/js/popup.js" async defer></script>
+    <div class="api-doc">
+            <span style="float: left;"><a href="https://github.com/iSumitBanik/Cryptocurrency-Price-Tracker-Chrome-Extension" target="_blank" rel="dofllow" style="text-decoration: none;margin-left:2px;">
+                Github </a>♥</span>
+            <span style="float: right;">Powered by <a href="http://coinmarketcap.com/" target="_blank" rel="dofllow"
+                style="text-decoration: none;color:blue;">
+                CoinmarketCap API</a></span>
+                <br />
+</div>
 </body>
 </html>

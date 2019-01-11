@@ -1,36 +1,62 @@
-body{
-    width: 390px;
-    height: 450px;
+html,body{
+    width: 430px;
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: initial;
+    border-top: 0px;
 }
 .heading-style{
-    font-size: 17px;
+    font-size: 19px;
+    line-height: 15px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.center-align{
     text-align: center;
 }
-.custom-navbar{
-    background:#3f51b5;
+
+.api-doc{
+    font-size: 13px;
+    padding: 0px 0px 3px 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-top: 0.5px solid black;
+}
+
+.header-style{
+    text-align: center;
+    color: #fff;
+}
+.click{
+    cursor: pointer;
 }
 nav {
-    height: 60px!important;
+    height: 65px;
 }
-.heading-rows{
-    font-size: 13.7px;
+.heading-rows-style{
+    font-size: 15px;
+    font-weight: 700;
+    padding: none;
 }
 table{
-    font-size: 14.5px;
+    font-size: 16px;
+    height: 590px;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
 }
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
+
+.cursor-style{
+    cursor: pointer;
 }
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+
+.mdl-layout-title{
+    text-align:center;color:#fff;font-weight: 300;font-size:21px;margin-top: 15px;
 }
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888; 
+.header-menu{
+    background:#303F9F;
+    margin-top:none;
+    margin-bottom:-16px;
+    padding: 3px 0px 3px 0px;
+    height: 65px;
 }
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-}
+
+#Name1,#Name2,#Name3,#Name4,#Name5,#Name6,#Name7,#Name8,#Name9,#Name10{font-weight: 600;}

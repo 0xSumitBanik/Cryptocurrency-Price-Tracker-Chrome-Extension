@@ -1,7 +1,7 @@
 {
     "name": "Cryptocurrency Price Tracker",
-    "version": "1.9",
-    "description": "Get the real time cryptocurrency prices",
+    "version": "2.1.1",
+    "description": "Get the real time prices of top ten cryptocurrency ",
     "manifest_version": 2,
     "icons": {
         "16": "files/img/icon.png",

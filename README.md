@@ -1,5 +1,8 @@
-# Cryptocurrency-Price-Tracker-Chrome-Extension
+# Cryptocurrency-Price-Tracker-Chrome-Extension [Outdated]
 
+~~This extension doesn't works anymore~~
+
+Visit the [v3.0.0](https://t.co/V3j5ewWFP6?amp=1) for the updated version.
 This Chrome Extension lets you track the prices of **Top 10 cryptocurrencies** providing the details such as Price in USD and percentage change in 1h. 
 
 ### How to install the chrome extension?
